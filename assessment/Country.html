@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Country.css">
+    <title>Country Information App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Information App</h1>
+        <input type="text" id="country-input" placeholder="Enter a country name">
+        <button id="search-button" onClick="document.getElementById('country-input').innerHTML=fetchCountryInfo(India)> Search</button>
+        <div id="country-info">
+            <h2>Country Information</h2>
+            <p><strong>Name:</strong> <span id="country-name"></span></p>
+            <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+            <p><strong>Population:</strong> <span id="country-population"></span></p>
+            <p><strong>Region:</strong> <span id="country-region"></span></p>
+            <p><strong>Flag:</strong></p>
+            <img id="country-flag" alt="Flag" src="">
+        </div>
+    </div>
+    <script src="Country.js"></script>
+</body>
+</html>
